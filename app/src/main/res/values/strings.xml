@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Pizza Store</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="whole_pizza">Pizza</string>
+    <string name="add_toppings">Add Toppings</string>
+    <string name="clear">Clear Pizza</string>
+    <string name="checkout">Checkout</string>
+    <string name="delivery">Delivery</string>
+    <string name="basePrice">$6.50</string>
+    <string name="toppingsPrice">$1.50</string>
+    <string name="deliveryCostPrice">$4.50</string>
+    <string name="title_activity_checkout">checkout</string>
+    <string name="yourOrder">Your Order</string>
+    <string name="basePriceLabel">Base Price: </string>
+    <string name="toppings">Toppings:</string>
+    <string name="deliveryCostLabel">Delivery Cost:</string>
+    <string name="totalLabel"><u>Total: </u></string>
+    <string name="finish">Finish</string>
+</resources>

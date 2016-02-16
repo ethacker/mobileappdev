@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.ethan.pizzastore.checkout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/yourOrder"
+        android:id="@+id/yourOrder"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/basePriceLabel"
+        android:id="@+id/basePriceLabel"
+        android:layout_below="@+id/yourOrder"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="57dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/basePrice"
+        android:id="@+id/baseprice"
+        android:layout_alignTop="@+id/basePriceLabel"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/toppings"
+        android:id="@+id/toppingsLabel"
+        android:layout_below="@+id/basePriceLabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="61dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/toppingsPrice"
+        android:layout_alignTop="@+id/toppingsLabel"
+        android:layout_alignParentEnd="true"
+        android:singleLine="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/deliveryCostLabel"
+        android:id="@+id/deliveryCostLabel"
+        android:layout_below="@+id/toppingsLabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="98dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/deliveryCost"
+        android:layout_alignTop="@+id/deliveryCostLabel"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/totalLabel"
+        android:id="@+id/totalLabel"
+        android:layout_below="@+id/deliveryCostLabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/totalcost"
+        android:layout_alignTop="@+id/totalLabel"
+        android:layout_alignEnd="@+id/deliveryCost" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/finish"
+        android:id="@+id/finishButton"
+        android:layout_marginBottom="29dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/yourOrder"
+        android:onClick="finishApp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toppingsLabel"
+        android:layout_above="@+id/deliveryCost"
+        android:id="@+id/toppingsLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/toppingsRow"></TableRow>
+    </TableLayout>
+
+</RelativeLayout>
